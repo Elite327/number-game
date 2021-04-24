@@ -1,7 +1,6 @@
 import tkinter as tk
 import dis
 import random
-from playsound import playsound
 from functools import partial
 
 # *MARK Variables
@@ -38,8 +37,6 @@ def buildNumberFrame():
 def newgamebuttonEventHandler():
     random.shuffle(buttonTexts)
     buildNumberFrame()
-    playsound('number-game/Resources/app_alert_tone_029.mp3')
-
 
 def switch(clickedButtonPosition, blankButtonPosition, clickedButtonText):
     # switch elements in buttonTexts at positions blankButtonPosition and clickedButtonPosition
@@ -47,15 +44,6 @@ def switch(clickedButtonPosition, blankButtonPosition, clickedButtonText):
     buttonTexts[clickedButtonPosition] = ''
     # build number frame again
     buildNumberFrame()
-    playsound('number-game/Resources/tspt_game_button_04_040.mp3')
-    if buttonTexts == ['1', '2', '3', '4', '5', '6', '7', '8', '']:
-        playsound(
-            'number-game/Resources/zapsplat_multimedia_game_retro_musical_ascend_advance_correct_21478.mp3')
-
-
-def wrongButton():
-    playsound('number-game/Resources/zapsplat_multimedia_error_tone_buzz_17636.mp3')
-
 
 def buttonEventHandler(clickedButtonText):
     # get the text of button clicked:
@@ -129,6 +117,8 @@ def buttonEventHandler(clickedButtonText):
 
 
 # *MARK Main
+
+print('Audio is not supported on replit, so if you want audio download to your computer')
 
 random.shuffle(buttonTexts)
 
