@@ -58,36 +58,27 @@ def buttonEventHandler(clickedButtonText):
     if blankButtonPosition == 0:
         if clickedButtonPosition == 1 or clickedButtonPosition == 3:
             switch(clickedButtonPosition, blankButtonPosition, clickedButtonText)
-        else:
-            wrongButton()
         # else :
         #     playsound('number-game/Resources/zapsplat_multimedia_error_tone_buzz_17636.mp3')
     elif blankButtonPosition == 1:
         if clickedButtonPosition == 0 or clickedButtonPosition == 4 or clickedButtonPosition == 2:
             switch(clickedButtonPosition, blankButtonPosition, clickedButtonText)
-        else:
-            wrongButton()
         # else :
         #     playsound('number-game/Resources/zapsplat_multimedia_error_tone_buzz_17636.mp3')
     elif blankButtonPosition == 2:
         if clickedButtonPosition == 1 or clickedButtonPosition == 5:
             switch(clickedButtonPosition, blankButtonPosition, clickedButtonText)
-        else:
-            wrongButton()
         # else :
         #     playsound('number-game/Resources/zapsplat_multimedia_error_tone_buzz_17636.mp3')
     elif blankButtonPosition == 3:
         if clickedButtonPosition == 0 or clickedButtonPosition == 4 or clickedButtonPosition == 6:
             switch(clickedButtonPosition, blankButtonPosition, clickedButtonText)
-        else:
-            wrongButton()
         # else :
         #     playsound('number-game/Resources/zapsplat_multimedia_error_tone_buzz_17636.mp3')
     elif blankButtonPosition == 4:
         if clickedButtonPosition == 1 or clickedButtonPosition == 3 or clickedButtonPosition == 5 or clickedButtonPosition == 7:
             switch(clickedButtonPosition, blankButtonPosition, clickedButtonText)
-        else:
-            wrongButton()
+        
         # else :
         #     playsound('number-game/Resources/zapsplat_multimedia_error_tone_buzz_17636.mp3')
     elif blankButtonPosition == 5:
